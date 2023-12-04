@@ -8,28 +8,46 @@ Perintah `cat` dapat digunakan untuk membuat file baru, menambahkan kata atau pe
 
 #### Membuat file baru menggunakan perintah `cat`
 
-Perintah `cat` dapat digunakan untuk membuat file baru. Jalankan perintah `cat > nama-file` dan file akan terbuat di folder yang masih aktif. Ganti `nama-file` pada perintah tersebut menggunakan nama file yang diinginkan.
+Perintah `cat` dapat digunakan untuk membuat file baru. Jalankan perintah `cat` diikuti dengan redirection `>` untuk membuat file baru.
 
-![gambar membuat file dengan printah cat]()
+    cat > file-baru.txt
 
-> **Catatan**
-
-> Setelah menjalankan perintah `cat > nama-file`, isi file tersebut kemudian tekan `ctrl + c` untuk menyimpan.
-
-#### Menambahkan kata pada suatu file dengan perintah `cat`
-
-Untuk menambahkan kata pada suatu file, jalankan perintah `cat >> nama-file`. Jalankan perintahnya dan masukkan kata yang ingin di tambahkan. Setelah selesai, tekan `ctrl + c` untuk mengakhiri perintah. Pada perintah tersebut, `nama-file` menunjuk kepada nama file yang ingin dimodifikasi.
-
-![gambar menambahkan kata dengan cat]()
+Setelah menjalankan perintah tersebut, maka akan masuk ke mode input di mana pengguna dapat mengetikkan teks yang diinginkan ke dalam file tersebut. Setelah selesai, tekan Ctrl + D untuk menyimpan, dan file baru dengan nama file-baru.txt akan dibuat didalam direktori yang sedang aktif
 
 #### Menggabungkan isi dari dua file menggunakan perintah `cat`
 
-Untuk meggabungkan isi dari dua file kemudian menyimpannya menjadi file yang berbeda, jalankan perintah `cat file-1 file-2 > file-3`. Pada perintah tersebut, `file-1` dan `file-2` merupakan file yang ingin dijadikan satu isinya. Kemudian `file-3` merupakan nama file baru hasil penggabungan dari dua file.
+Untuk meggabungkan isi dari dua file kemudian menyimpannya menjadi file yang berbeda, jalankan perintah `cat` diikuti dengan file yang akan digabung dan tanda redirection `>`.
 
-![gambar menggabungkan 2 file]()
+  cat file-1.txt file-2.txt > file-gabungan.txt
+
+Perintah tersebut akan menggabungkan isi dari `file-1.txt` dan `file-2.txt`, dan menyimpannya dengan nama `file-gabungan`. *Nama file dapat diubah sesuai kebutuhan*
 
 #### Mencari dan merubah kata tertentu dalam suatu file dengan perintah `sed`
 
-Untuk mencari suatu kata pada file tertentu dan mengubah kata yang dicari menjadi kata yang lain, dapan menjalankan perintah `sed -i 's/Kata1/Kata2/g' nama-file`. Perintah `-i` menyatakan perubahan langsung diterapkan di file, `'s/` merupakan perintah untuk mengganti teks, `Kata1/` merupakan kata yang dicari dan ingin diganti, `Kata2/` kata yang ingin diterapkan, `g'` perubahan diterapkan ke seluruh teks yang sesuai.
+Untuk mencari suatu kata pada file tertentu dan mengubah kata yang dicari menjadi kata yang lain, dapan menjalankan perintah :
 
-![gambar]()
+    sed -i 's/Kata1/Kata2/g' nama-file 
+
+Perintah `-i` menyatakan perubahan langsung diterapkan di file 
+
+perintah `'s/` merupakan perintah untuk mengganti teks
+
+Perintah `Kata1/` merupakan kata yang dicari dan ingin diganti
+
+Perintah `Kata2/` merupakan kata yang ingin diterapkan
+
+Perintah `g'` menyatakan perubahan diterapkan ke seluruh teks yang sesuai
+
+Perintah `nama-file` menyatakan file yang akan dimodifikasi
+
+#### Mencari kata dengan perintah `grep`
+
+Untuk mencari kata atau kalimat dalam suatu file, gunakan perintah `grep` diikuti dengan kata atau kalimat yang ingin dicari dan file tempat kata ingin dicari.
+
+    grep kata-yang-ingin-dicari nama-file.txt
+
+#### Mengurutkan isi file dengan perintah `short`
+
+Perintah `short` akan mengurutkan si dari suatu file secara alfabetis berdasarkan baris, dan menampilkan hasilnya ke dalam output terminal tanpa mengubah isi file. Untuk melakukannya, jalankan perintah `shot` diikuti dengan file yang ingin dilihat.
+
+    short nama-file.txt 
