@@ -8,7 +8,7 @@ DevOps berasal dari dua kata, yaitu kata "Development" dan "Operation", di mana 
 
 **IT Operations** : Biasa disingkat juga sebagai Operations, adalah seseorang atau kelompok orang yang bertanggung jawab untuk merilis (release) dan menggelar (deploy) aplikasi, serta mengoperasikan (operate) dan memantau (monitor) infrastruktur (seperti server) yang menjalankan aplikasi tersebut.
 
-![gambar ci/cd]()
+![gambar ci/cd](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-1/images/01-devops-fundamental/DevOps-Graphic-1024x477.png)
 
 Istilah DevOps ini merupakan hasil dari penggabungan kata Development dan Operations yang mana merujuk pada sekelompok orang yang tergabung dalam proses pengembangan aplikasi. Tujuan utama dari DevOps adalah untuk memberikan nilai guna dalam menghasilkan aplikasi yang baik dengan cepat sehingga pengguna/ konsumen dapat menggunakannya secara langsung tanpa ada masalah.Dengan adanya profesi DevOps ini diharapkan suatu perusahaan dapat mengembangkan dan memperbaiki produk mereka dengan cepat serta melayani penguna dengan baik.
 

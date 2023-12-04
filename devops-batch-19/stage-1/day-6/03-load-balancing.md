@@ -29,16 +29,16 @@ Masukkan kode berikut ke dalam file yang baru dibuat
 > 
 > Bagian proxy_pass, samakan dengan nama upstream.
 
-![gambar konfigurasi]()
+![gambar konfigurasi](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-6/images/03-load-balancing/lb-konfigurasi.png)
 
 Jalankan nginx test untuk mengetahui error syntax. Jika tidak ada restart nginx
 
-![gambar cek syntax]()
+![gambar cek syntax](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-6/images/03-load-balancing/lb-cek-syntx.png)
 
 Jalankan aplikasi yang ada di server dan panggil domain yang dikonfigurasi.
 
-![gambar run app]()
+![gambar run app](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-6/images/03-load-balancing/lb-run-app.png)
 
-![gambar app web]()
+![gambar app web](https://github.com/Dyno12323/devops-batch-19/blob/master/devops-batch-19/stage-1/day-6/images/03-load-balancing/lb-app-web.png)
 
 Untuk mengetahui apakah konfigurasi load balancing yang dilakukan benar-benar berhasil, matikan salah satu aplikasi server kemudian reload domain konfigurasinya. Jika konfigurasi berhasil maka aplikasinya masih berjalan.
